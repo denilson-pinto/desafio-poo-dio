@@ -28,16 +28,21 @@ public class Main {
         System.out.println(mentoria);*/
 
         Bootcamp bootcamp = new Bootcamp();
-        bootcamp.setNome("Bootcamp GFT Quality Assurance #1");
+        bootcamp.setNome("Bootcamp GFT Quality Assurance #1\n");
 
         bootcamp.setDescricao("Conheça já o Bootcamp GFT Quality Assurance #1: " +
                 "um programa feito para você que planeja desenvolver suas habilidades em QA. " +
-                "Com cursos, desafios de códigos, mentorias e desafios de projeto, suas chances de ganhar destaque no mercado só aumentam! " +
-                "Não perca essa chance e inscreva-se já.");
+                "\nCom cursos, desafios de códigos, mentorias e desafios de projeto, suas chances de ganhar destaque no mercado só aumentam! " +
+                "\nNão perca essa chance e inscreva-se já.");
 
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
+
+        System.out.println(bootcamp.getNome());
+        System.out.println(bootcamp.getDescricao());
+
+        System.out.println("\n##################################################################\n");
 
         Dev denilson = new Dev();
         denilson.setNome("Denilson");
